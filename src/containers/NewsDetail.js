@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { useLocation, useHistory } from "react-router-dom";
 import axios from "axios";
 import { useState } from "react";
-import { PushSpinner } from "react-spinners-kit";
+import { MetroSpinner } from "react-spinners-kit";
 import { Button } from "@material-ui/core";
 import KeyboardBackspaceIcon from "@material-ui/icons/KeyboardBackspace";
 import "./NewsDetail.scss";
@@ -56,7 +56,7 @@ const NewsDetail = () => {
             </Button>
             {loading ? (
                 <div className="loaderWrapper">
-                    <PushSpinner color="white" />
+                    <MetroSpinner color="white" />
                 </div>
             ) : (
                 <div className="details">

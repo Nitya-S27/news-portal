@@ -58,7 +58,9 @@
       transition: 0.3s ease;
       font-weight: bold;
       &:hover {
-        background-color: #c27728;
+        box-shadow: 2px 2px 10px #f11a7b ;
+        background-color: black;
+        color: white;
         transform: scale(1.05);
       }
       @media (max-width: 1024px) {
