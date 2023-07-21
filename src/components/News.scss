@@ -1,0 +1,72 @@
+.newsBox {
+  margin: 1rem 0;
+  border-bottom: 1px solid gray;
+  padding: 2rem 1rem;
+  color: #fff;
+  // margin: 40px auto;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  width: 40vw;
+  border-radius: 15px;
+  padding: 32px;
+  backdrop-filter: blur(15px);
+  transition: 0.5s ease;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  @media (max-width: 1024px) {
+    width: 60vw;
+    margin: 1.5rem;
+  }
+  @media (max-width: 600px) {
+    width: 80vw;
+    margin: 1.2rem;
+    padding: 1.5rem 1rem;
+  }
+  .newsTitle {
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: Roboto, sans-serif;
+    @media (max-width: 1024px) {
+      font-size: 1.3rem;
+    }
+    @media (max-width: 600px) {
+      font-size: 1.2rem;
+    }
+  }
+  .newsAuthor {
+    font-size: 1.4rem;
+    @media (max-width: 1024px) {
+      font-size: 1.1rem;
+    }
+    @media (max-width: 600px) {
+      font-size: 1rem;
+    }
+  }
+  .buttonLink {
+    text-decoration: none;
+    .knowMoreButton {
+      margin-top: 1rem;
+      border-radius: 10px;
+      // background-color: rgba(255, 255, 255, 0.1);
+      // border: 1px solid rgba(255, 255, 255, 0.1);
+      background-color: #f11a7b;
+      backdrop-filter: blur(30px);
+      color: black;
+      font-size: 1.1rem;
+      text-transform: none;
+      transition: 0.3s ease;
+      font-weight: bold;
+      &:hover {
+        background-color: #c27728;
+        transform: scale(1.05);
+      }
+      @media (max-width: 1024px) {
+        font-size: 1.1rem;
+      }
+      @media (max-width: 600px) {
+        font-size: 1rem;
+      }
+    }
+  }
+}

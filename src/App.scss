@@ -1,0 +1,211 @@
+.App {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+    align-items: center;
+    @media (max-width: 1024px) {
+      margin: 2rem 1rem;
+    }
+    .logo {
+      font-size: 1.5rem;
+      // font-style: italic;
+      color: white;
+      font-weight: bold;
+      @media (max-width: 1024px) {
+        font-size: 1.35rem;
+      }
+      @media (max-width: 600px) {
+        font-size: 1.2rem;
+      }
+    }
+    .links {
+      span {
+        text-decoration: none;
+        font-style: italic;
+        color: white;
+        margin: 0 2rem;
+        &:hover {
+          text-decoration: underline;
+        }
+        @media (max-width: 1024px) {
+          font-size: 1rem;
+          margin: 0 1rem;
+        }
+        @media (max-width: 600px) {
+          font-size: 0.7rem;
+          margin: 0 0.5rem;
+        }
+      }
+    }
+  }
+  .pageHeader {
+    margin-top: 4rem;
+    text-align: center;
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 600;
+    @media (max-width: 1024px) {
+      font-size: 2.5rem;
+    }
+    @media (max-width: 600px) {
+      font-size: 1.8rem;
+    }
+  }
+  .searchBox {
+    margin: 2rem 0;
+    .searchForm {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      width: 65vw;
+      margin: 0 auto;
+      @media (max-width: 1024px) {
+        gap: 1rem;
+        width: 75vw;
+      }
+      @media (max-width: 600px) {
+        width: 90vw;
+        flex-direction: column;
+      }
+      .searchField {
+        flex: 0.75;
+        min-height: 3rem;
+        font-size: 1.2rem;
+        border: none;
+        padding-left: 1rem;
+        background-color: #f11a7b;
+        border-radius: 10px;
+        font-weight: bold;
+        &:focus {
+          outline: none !important;
+        }
+        &::placeholder {
+          padding-left: -10px;
+          color: black;
+          opacity: 0.8; /* Firefox */
+        }
+        @media (max-width: 1024px) {
+          font-size: 1.1rem;
+        }
+        @media (max-width: 600px) {
+          // font-size: 1rem;
+          border-radius: 5px;
+        }
+      }
+
+
+
+      
+      .searchButton {
+        flex: 0.25;
+        font-size: 1.2rem;
+        text-transform: none;
+        height: 3rem;
+        border-radius: 10px;
+        background-color: #ffffff;
+        transition: transform 0.3s ease;
+        font-weight: bold;
+        outline: 1px solid #F11A7B;
+        box-shadow: 5px 5px 10px #F11A7B;
+        &:hover {
+          transform: scale(1.1);
+        }
+        @media (max-width: 1024px) {
+          font-size: 1.1rem;
+        }
+        @media (max-width: 600px) {
+          font-size: 0.9rem;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+  .fullHeight {
+    // min-height: 55vh;
+    margin-top: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .loaderWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10rem;
+  }
+  .searchResults {
+    margin-top: 6rem;
+    .countHeader {
+      color: rgba(255, 255, 255, 0.473);
+      font-size: 1.5rem;
+      font-style: italic;
+      text-align: left;
+      padding-left: 4rem;
+      font-weight: 400;
+      @media (max-width: 1024px) {
+        font-size: 1.1rem;
+        padding-left: 1rem;
+        text-align: center;
+      }
+      @media (max-width: 600px) {
+        font-size: 0.9rem;
+        padding-right: 1rem;
+      }
+    }
+    .newsCards {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      // padding: 0 2rem;
+      // @media (max-width: 1024px) {
+      //     padding: 0 1rem;
+      // }
+    }
+    // margin: 5rem 3rem;
+    // background-color: rgb(224, 223, 223);
+  }
+  .navigate {
+    width: 30vw;
+    align-items: center;
+    margin: 4rem auto;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    @media (max-width: 1024px) {
+      width: 40vw;
+    }
+    @media (max-width: 600px) {
+      width: 90vw;
+      gap: 1rem;
+    }
+    .text {
+      color: white;
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+      @media (max-width: 1024px) {
+        font-size: 1.1rem;
+      }
+      @media (max-width: 600px) {
+        font-size: 0.9rem;
+      }
+    }
+    .prevButton,
+    .nextButton {
+      background-color: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(30px);
+      color: rgba(255, 255, 255, 0.8);
+      margin-bottom: 20px;
+      transition: transform 0.3s ease;
+      border-radius: 50px;
+      height: 3rem;
+      width: 3rem;
+      &:hover {
+        transform: scale(1.1);
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+    }
+  }
+}
